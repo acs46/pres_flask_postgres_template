@@ -25,9 +25,9 @@ CREATE DATABASE president;
 \c president
 
 #
-# To create the president table, enter
+#2 To create the president table, enter
 \i psql_create_president.sql
-# To insert data row by row, enter
+#2 To insert data row by row, enter
 \i insert_president.sql
 
 add Primary key to table for AlchemySQL
@@ -35,40 +35,42 @@ ALTER TABLE president ADD COLUMN id SERIAL PRIMARY KEY;
 
 Remove all records from table
 DELETE from president;
-# populate table directly from text file
+#2 populate table directly from text file
 \COPY president FROM 'president.txt' with DELIMITER E'\t';
 #E escapes the following character (ie tab delimited format)
 
 \q to quit
 
-# In the pres_psql directory  (cd to main app directory)
-# Edit the app.config line in get_pres.py to reflect your local address to the database
-##*****************************************##
-## Connect to your local postgres database ##
-##*****************************************##
+#2 In the pres_psql directory  (cd to main app directory)
+#2 Edit the app.config line in get_pres.py to reflect your local address to the database
+
+*****************************************
+ Connect to your local postgres database 
+*****************************************
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:your_login_name@localhost/president'
 
 
-# create a new virtual environment in the pres_psql directory
+#2 create a new virtual environment in the pres_psql directory
 python3 -m venv venv
 
-# activate the virtual environment
+#2 activate the virtual environment
 source venv/bin/activate
-## type deactivate to exit virtual enviro
+#2 type deactivate to exit virtual enviro
 
 
-# initialize git for this directory
+#2 initialize git for this directory
 git init
 
-#install any required packages for this app
+#2install any required packages for this app
 pip3 install -r requirements.txt
 
-# USE the start.sh script in the pres_psql directory to start the app
+#2 USE the start.sh script in the pres_psql directory to start the app
 in terminal type
 ./start.sh
 
-# in your browser
-# go to the localhost address to access database
+#2 in your browser
+#2 go to the localhost address to access database
 http://127.0.0.1:5000/
 
 type control c in terminal window to quit
