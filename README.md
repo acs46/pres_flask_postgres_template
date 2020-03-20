@@ -9,10 +9,10 @@ clone repo to a designated directory on your computer (i.e. in a terminal cd to 
   
 The data directory contains raw president data and sql scripts to configure table and insert data
   Files contained in data directory: 
-    insert_president.sql*      
-    president.txt*
+    insert_president.sql      
+    president.txt
     pres_setup_psql.txt        
-    psql_create_president.sql*
+    psql_create_president.sql
 
 # cd to the data dir:
 # Make sure the postgres.app is running on your machine
