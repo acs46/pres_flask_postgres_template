@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Presidents Database Search Results{% endblock %}
+{% block page_content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>....</title>
+  <meta charset="utf-8">
+<div class="page-header">
+  <body>
+    <h1> Presidential Database Search Results </h1>
+    <p> Project Template </p>
+</div>
+</head>
+<div class="container">
+Value of form variables:
+name1= {{name1}}
+<p>
+name2= {{name2}}
+<p>
+name3= {{name3}}
+<p>
+name4= {{name4}}
+<p>
+
+<h2>List of Presidents </h2>
+
+<div class="table-responsive">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>#</th>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Suffix</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Birth Date</th>
+        <th>Death Date</th>
+      </tr>
+    </thead>
+    <tbody>
+       {% for item in presults %}
+           <tr>
+             <td>{{item.id}}</td>
+             <td>{{item.last_name}}</td>
+             <td>{{item.first_name}}</td>
+             <td>{{item.suffix}}</td>
+             <td>{{item.city}}</td>
+             <td>{{item.state}}</td>
+             <td>{{item.birth}}</td>
+             <td>{{item.death}}</td>
+           </tr>
+        {% endfor %}
+   </tbody>
+  </table>
+</div>
+</div>
+</body>
+
+{{ wtf.quick_form(form3) }}
+{% endblock %}
+</html>
