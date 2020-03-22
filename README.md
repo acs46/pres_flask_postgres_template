@@ -17,7 +17,7 @@ The data directory contains raw president data and sql scripts to configure tabl
    3. psql_create_president.sql<p>
 
 ## cd to the data dir:
-## Make sure the postgres.app is running on your machine
+Make sure the postgres.app is running on your machine
 ## In a terminal/shell window type
 'psql' to start the postgres.app
 
