@@ -7,13 +7,14 @@
 Installation notes:
 
 clone repo to a designated directory on your computer (i.e. in a terminal cd to where you want it)
-  git clone https://github.com/acs46/pres_psql_flask_template
+<p>
+git clone https://github.com/acs46/pres_psql_flask_template
   
 The data directory contains raw president data and sql scripts to configure table and insert data
-  Files contained in data directory: 
-   1. insert_president.sql      
-   2. president.txt
-   3. psql_create_president.sql
+<p>Files contained in data directory:<p>
+   1. insert_president.sql<p>      
+   2. president.txt<p>
+   3. psql_create_president.sql<p>
 
 ## cd to the data dir:
 ## Make sure the postgres.app is running on your machine
