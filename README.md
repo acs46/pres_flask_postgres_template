@@ -1,6 +1,8 @@
 # pres_psql_flask_template
+## Flask app that sorts/selects/limits presidents from postgres database
 
-Flask app that sorts/selects/limits presidents from postgres database
+# Working Example of this application can be found at
+# https://get-pres.herokuapp.com/
 
 Installation notes:
 
