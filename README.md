@@ -59,7 +59,9 @@ python3 -m venv venv
 
 ## activate the virtual environment
 source venv/bin/activate
-## type deactivate to exit virtual enviro
+
+## if you want to deactivate when your finished<p>
+type deactivate to exit virtual enviro
 
 
 ## initialize git for this directory
