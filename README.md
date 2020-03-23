@@ -32,14 +32,15 @@ CREATE DATABASE president;
 ## To insert data row by row, enter
 \i insert_president.sql
 
-add Primary key to table for AlchemySQL
-ALTER TABLE president ADD COLUMN id SERIAL PRIMARY KEY;
 
 Remove all records from table
 DELETE from president;
 ## populate table directly from text file
 \COPY president FROM 'president.txt' with DELIMITER E'\t';
 ###E escapes the following character (ie tab delimited format)
+
+add Primary key to table for AlchemySQL<p>
+ALTER TABLE president ADD COLUMN id SERIAL PRIMARY KEY;
 
 \q to quit
 
@@ -53,7 +54,7 @@ DELETE from president;
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:your_login_name@localhost/president'
 
 
-## create a new virtual environment in the pres_psql directory
+## create a new virtual environment in the pres_flask_postgres_template directory
 python3 -m venv venv
 
 ## activate the virtual environment
