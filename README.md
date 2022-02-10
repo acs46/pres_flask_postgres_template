@@ -8,7 +8,8 @@ Installation notes:
 
 clone repo to a designated directory on your computer (i.e. in a terminal cd to where you want it)
 <p>
-git clone https://github.com/acs46/pres_psql_flask_template
+  download .zip file into your project directory
+  
   
 The data directory contains raw president data and sql scripts to configure table and insert data
 <p>Files contained in data directory:<p>
