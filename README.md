@@ -1,9 +1,6 @@
 # pres_psql_flask_template
 ## Flask app that sorts/selects/limits presidents from postgres database
 
-### Working Example of this application can be found at
-#### https://get-pres.herokuapp.com/
-
 Installation notes:
 
 clone repo to a designated directory on your computer (i.e. in a terminal cd to where you want it)
@@ -18,7 +15,7 @@ The data directory contains raw president data and sql scripts to configure tabl
    3. psql_create_president.sql<p>
 
 ## cd to the data dir:
-Make sure the postgres.app is running on your machine
+Make sure the postgres.app (Mac) or pgadmin4 (linux) is running on your machine
 ## In a terminal/shell window type
 'psql' to start the postgres.app
 
@@ -80,7 +77,3 @@ in terminal type
 http://127.0.0.1:5000/
 
 type control c in terminal window to quit
-
-# Working Example of this application can be found at
-
-https://get-pres.herokuapp.com/
