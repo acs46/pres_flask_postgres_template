@@ -31,7 +31,7 @@ The data directory contains raw president data and sql scripts to configure tabl
 ## cd to the data dir:
 Make sure the postgres.app (Mac) or pgadmin4 (linux) is running on your machine
 ## In a terminal/shell window type
-'psql' to start the postgres.app
+'psql -U user_name president' to start the postgres.app
 
 ## from psql prompt type
 CREATE DATABASE president;
