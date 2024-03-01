@@ -33,9 +33,6 @@ Make sure the postgres.app (Mac) or pgadmin4 (linux) is running on your machine
 ## In a terminal/shell window type
 'psql -U user_name president' to start the postgres.app
 
-## from psql prompt type
-CREATE DATABASE president;
-
 ## Connect to the president database
 \c president
 
