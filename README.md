@@ -10,6 +10,7 @@ clone repo to a designated directory on your computer (i.e. in a terminal cd to 
   Set Permissions for database and user
 
   sudo su postgres
+  
   psql
   
   CREATE USER user_name with CREATEDB;
