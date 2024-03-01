@@ -11,9 +11,13 @@ clone repo to a designated directory on your computer (i.e. in a terminal cd to 
 
   sudo su postgres
   psql
+  
   CREATE USER user_name with CREATEDB;
+  
   CREATE DATABASE president;
+  
   GRANT ALL PRIVILEGES ON DATABASE president to user_name;
+  
   \q
   S exit
   
