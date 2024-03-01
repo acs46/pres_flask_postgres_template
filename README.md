@@ -6,7 +6,16 @@ Installation notes:
 clone repo to a designated directory on your computer (i.e. in a terminal cd to where you want it)
 <p>
   download .zip file into your project directory
-  
+
+  Set Permissions for database and user
+
+  sudo su postgres
+  psql
+  CREATE USER user_name with CREATEDB;
+  CREATE DATABASE president;
+  GRANT ALL PRIVILEGES ON DATABASE president to user_name;
+  \q
+  S exit
   
 The data directory contains raw president data and sql scripts to configure table and insert data
 <p>Files contained in data directory:<p>
